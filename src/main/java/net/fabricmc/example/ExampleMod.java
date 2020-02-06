@@ -45,6 +45,7 @@ public class ExampleMod implements ClientModInitializer, ModInitializer {
     public void onInitialize() {
         Registry.register(Registry.PARTICLE_TYPE, new Identifier("modid", "simple"), SIMPLE_TEST_PARTICLE);
         Registry.register(Registry.PARTICLE_TYPE, new Identifier("modid", "custom"), CUSTOM_TEST_PARTICLE);
+        Registry.register(Registry.ITEM, new Identifier("modid", "particle_debug"), new DebugItem());
     }
 
     @Override
